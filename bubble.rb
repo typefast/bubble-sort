@@ -3,8 +3,8 @@ def bubble_sort(array)
     i = 0
     swapped = 0
     while i < array.length - 1
-      if array[i + 1] < array[i]
-        array[i], array[i + 1] = array[i + 1], array[i]
+      if array[i + 1] < array[i] #if the array element to the right of i is smaller
+        array[i], array[i + 1] = array[i + 1], array[i] #move the smaller element to the left
         swapped += 1
       end
       i += 1
